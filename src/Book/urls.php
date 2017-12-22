@@ -14,7 +14,7 @@ return array (
                 'model' => 'Book_Views_Page',
                 'method' => 'create',
                 'precond' => array(
-                        'Pluf_Precondition::loginRequired',
+                        'User_Precondition::loginRequired',
                         'Book_Precondition::userCanCreatePage'
                 ),
                 'http-method' => 'POST'
@@ -52,7 +52,7 @@ return array (
                 'model' => 'Book_Views',
                 'method' => 'create',
                 'precond' => array(
-                        'Pluf_Precondition::loginRequired'
+                        'User_Precondition::loginRequired'
                 ),
                 'http-method' => 'POST'
         ),
@@ -68,7 +68,7 @@ return array (
                 'method' => 'update',
                 'http-method' => 'POST',
                 'precond' => array(
-                        'Pluf_Precondition::loginRequired'
+                        'User_Precondition::loginRequired'
                 )
         ),
         array(
@@ -77,7 +77,7 @@ return array (
                 'method' => 'delete',
                 'http-method' => 'DELETE',
                 'precond' => array(
-                        'Pluf_Precondition::loginRequired'
+                        'User_Precondition::loginRequired'
                 )
         )
 );

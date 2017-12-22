@@ -68,7 +68,7 @@ class Book_Book extends Pluf_Model
                 // رابطه‌ها
                 'interested' => array(
                         'type' => 'Pluf_DB_Field_Manytomany',
-                        'model' => 'Pluf_User',
+                        'model' => 'User',
                         'blank' => true,
                         'relate_name' => 'interested',
                         'verbose' => __('interested users'),
@@ -77,7 +77,7 @@ class Book_Book extends Pluf_Model
                 ),
                 'submitter' => array(
                         'type' => 'Pluf_DB_Field_Foreignkey',
-                        'model' => 'Pluf_User',
+                        'model' => 'User',
                         'blank' => false,
                         'verbose' => __('submitter'),
                         'relate_name' => 'submitted_wikipages'
