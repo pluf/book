@@ -84,7 +84,7 @@ class Book_Page extends Pluf_Model
                 // رابطه‌ها
                 'submitter' => array(
                         'type' => 'Pluf_DB_Field_Foreignkey',
-                        'model' => 'Pluf_User',
+                        'model' => 'User',
                         'blank' => false,
                         'verbose' => __('submitter')
                 ),
